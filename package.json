@@ -1,0 +1,15 @@
+{
+  "name": "get-tweets",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node twitter.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "twitter-api-v2": "^1.12.5",
+    "xlsx": "^0.18.5"
+  }
+}
