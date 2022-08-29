@@ -1,7 +1,6 @@
 const { TwitterApi } = require('twitter-api-v2');
 const XLSX = require('XLSX');
 const short = require('short-uuid');
-
 const shortUUID = short.generate();
 
 const ACCESS_TOKEN = process.argv[2];
@@ -22,7 +21,7 @@ const jsonToXLSX = (data) => {
 }
 
 const exportTweets = async () => {
-  const jsTweets = await twitterClient.v2.search(SEARCH_QUERY, {'media.fields': 'url'});
+  const jsTweets = await twitterClient.v2.search(SEARCH_QUERY, {'media.fields': 'url', 'tweet.fields': 'created_at'});
 
   const tweets = [];
   // Consume every possible tweet of jsTweets (until rate limit is hit)
