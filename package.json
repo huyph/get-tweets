@@ -9,6 +9,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "short-uuid": "^4.2.0",
     "twitter-api-v2": "^1.12.5",
     "xlsx": "^0.18.5"
   }

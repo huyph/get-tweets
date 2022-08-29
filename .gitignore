@@ -1,0 +1,6 @@
+/.idea/
+/node_modules/
+*_auto_*.xlsx
+
+# auto-generated files by microsoft word
+~$der*.docx
